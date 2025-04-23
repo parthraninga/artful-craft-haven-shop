@@ -14,36 +14,45 @@ const CategorySection = () => {
   }, []);
 
   return (
-    <section className="py-12">
+    <section className="py-16 bg-craft-50">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center text-center mb-10">
-          <h2 className="text-3xl font-bold text-craft-800 mb-2">Shop by Category</h2>
-          <p className="text-muted-foreground max-w-2xl">
-            Explore our wide range of creative supplies, stationery, and accessories.
+        <div className="flex flex-col items-center text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-craft-800 mb-4">
+            Explore Our Categories
+          </h2>
+          <p className="text-muted-foreground max-w-2xl text-lg">
+            Find everything you need for your creative journey
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {categoriesData.map((category) => (
             <Link 
               to={`/category/${category.id}`} 
               key={category.id} 
-              className="no-underline group"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/5] no-underline transform transition-transform duration-300 hover:-translate-y-2"
             >
-              <div className="relative h-80 overflow-hidden rounded-lg bg-craft-900">
+              <div className="absolute inset-0">
                 <img 
                   src={category.image} 
                   alt={category.name} 
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-craft-900/80 to-craft-900/20 flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{category.name}</h3>
-                  <p className="text-white/80 mb-4 text-sm">{category.description}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-craft-900/90 via-craft-900/40 to-transparent" />
+              </div>
+              
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <div className="transform transition-transform duration-300 translate-y-4 group-hover:translate-y-0">
+                  <h3 className="text-2xl font-bold mb-3">{category.name}</h3>
+                  <p className="text-white/90 mb-4 text-sm line-clamp-2">
+                    {category.description}
+                  </p>
                   <Button 
                     variant="outline" 
-                    className="w-full mt-2 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white"
+                    className="w-full bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white group"
                   >
-                    Shop Now <ChevronRight className="ml-2 h-4 w-4" />
+                    Explore Now
+                    <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Button>
                 </div>
               </div>
