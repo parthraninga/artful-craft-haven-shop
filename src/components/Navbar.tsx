@@ -54,7 +54,7 @@ const Navbar = () => {
           
           <Link to="/" className="flex items-center gap-2 no-underline">
             <Palette className="h-6 w-6 text-craft-500" />
-            <span className="text-xl font-bold text-craft-800">ArtfulCraft</span>
+            <span className="text-xl font-bold text-craft-800">The Highon's</span>
           </Link>
         </div>
 

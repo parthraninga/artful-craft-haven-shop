@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Palette } from "lucide-react";
 
@@ -10,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 no-underline mb-4">
               <Palette className="h-6 w-6 text-craft-500" />
-              <span className="text-xl font-bold text-craft-800">ArtfulCraft</span>
+              <span className="text-xl font-bold text-craft-800">The Highon's</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Your one-stop shop for quality art supplies, stationery, and unique keychains.
@@ -72,7 +71,7 @@ const Footer = () => {
         
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} ArtfulCraft. All rights reserved.
+            &copy; {new Date().getFullYear()} The Highon's. All rights reserved.
           </p>
           
           <div className="flex gap-6 mt-4 md:mt-0">

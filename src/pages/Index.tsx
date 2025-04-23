@@ -11,7 +11,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3')] bg-cover bg-center opacity-30"></div>
         <div className="container mx-auto px-4 py-24 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Quality Art & Craft Supplies for Your Creative Journey</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Quality Art & Craft Supplies by The Highon's</h1>
             <p className="text-xl mb-8 text-white/80">
               Discover premium art supplies, stationery, and unique collectibles at affordable prices.
             </p>
