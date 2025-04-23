@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import CategorySection from "@/components/CategorySection";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Truck } from "lucide-react";
 
 const Index = () => {
   return (
@@ -80,6 +80,34 @@ const Index = () => {
 
       {/* Categories */}
       <CategorySection />
+
+      {/* Navsari Shipping Section */}
+      <section className="py-16 bg-craft-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+            <div className="p-8 text-center">
+              <div className="flex justify-center mb-6">
+                <Truck className="h-12 w-12 text-craft-500" />
+              </div>
+              <h2 className="text-3xl font-bold text-craft-800 mb-4">
+                Exclusive Shipping in Navsari
+              </h2>
+              <p className="text-muted-foreground text-lg mb-6">
+                We provide free same-day delivery for all orders within Navsari city limits. 
+                Get your art supplies and craft materials delivered right to your doorstep!
+              </p>
+              <div className="flex justify-center">
+                <Button 
+                  className="bg-craft-500 hover:bg-craft-600 text-white" 
+                  size="lg"
+                >
+                  Check Delivery Availability <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter */}
       <section className="py-16 bg-craft-100">
