@@ -48,11 +48,10 @@ const CategorySection = () => {
                     {category.description}
                   </p>
                   <Button 
-                    variant="outline" 
-                    className="w-full bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white group"
+                    className="bg-craft-500 hover:bg-craft-600 text-white w-full" 
+                    size="lg"
                   >
-                    Explore Now
-                    <ChevronRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    Browse Categories <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
