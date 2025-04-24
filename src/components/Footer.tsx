@@ -61,10 +61,10 @@ const Footer = () => {
           <div>
             <h3 className="font-medium text-lg mb-4">Contact Us</h3>
             <address className="not-italic text-muted-foreground text-sm space-y-2">
-              <p>123 Creative Street</p>
-              <p>Art District, Design City</p>
-              <p>Email: info@artfulcraft.com</p>
-              <p>Phone: +91 1234567890</p>
+              <p>Asthamangal Apartment</p>
+              <p>Navsari</p>
+              <p>Email: thehighons@gmail.com </p>
+              <p>Phone: +91 70465 85303</p>
             </address>
           </div>
         </div>
