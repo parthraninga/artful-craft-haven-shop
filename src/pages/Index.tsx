@@ -23,8 +23,7 @@ const Index = () => {
                 Shop Now <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
               <Button 
-                variant="outline" 
-                className="border-white/40 text-white hover:bg-white/10" 
+                className="bg-craft-500 hover:bg-craft-600 text-white" 
                 size="lg"
               >
                 Browse Categories
